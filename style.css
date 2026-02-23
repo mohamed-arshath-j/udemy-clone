@@ -14,6 +14,10 @@ body {
     border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar__s1__title {
@@ -34,6 +38,7 @@ body {
     border: none;
     width: 100%;
     font-size: 16px;
+    background-color: transparent;
 }
 
 .navbar__s2 input:focus {
@@ -44,6 +49,27 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.my-learning {
+    position: relative;
+    cursor: pointer;
+}
+
+.my-learning__pop {
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    padding: 10px;
+    top: 150%;
+    right: 0;
+    display: none;
+}
+
+.my-learning:hover .my-learning__pop{
+    display: block;
+
 }
 
 .categories {
@@ -62,35 +88,46 @@ body {
 
 .sale-image img {
     width: 100%;
+    position: relative;
 }
 
-.recom{
+.sale-image__offer {
+    width: 35%;
+    background-color: white;
+    border: solid black 2px;
+    padding: 2%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.recom {
     padding: 10px;
 }
 
-.recom__container{
-display: flex;
-flex-wrap: wrap;
-margin-top: 10px;
-justify-content: space-between;
+.recom__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-between;
 }
 
-.course-card{
+.course-card {
     width: 350px;
 
 }
 
-.course-card img{
+.course-card img {
     width: 100%;
     height: 50%;
 }
 
-.topics{
+.topics {
     padding: 10px;
 
 }
 
-.topics-container{
+.topics-container {
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -98,7 +135,7 @@ justify-content: space-between;
 
 }
 
-.topics-container p{
+.topics-container p {
     border: solid grey 2px;
     padding: 10px;
     flex-grow: 1;
@@ -106,31 +143,31 @@ justify-content: space-between;
 
 }
 
-.popular{
+.popular {
     padding: 10px;
 }
 
-.popular_container{
+.popular_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-.footer-1{
+.footer-1 {
     display: flex;
     gap: 10px;
 
 }
 
-.footer-2{
+.footer-2 {
     display: flex;
     justify-content: space-between;
     margin: 20px;
     align-items: center;
 }
 
-.footer{
+.footer {
     background-color: black;
     color: white;
     padding: 30px;
